@@ -6,8 +6,7 @@ import java.util.Stack;
 public class InterpretadorExpressoesAritmeticas implements InterpretadorExpressao{
     private InterpretadorExpressao interpretadorInicial;
 
-    public void InterpretadorExpressoesAritmeticas(String contexto) {
-
+    public InterpretadorExpressoesAritmeticas(String contexto) {
         Stack<InterpretadorExpressao> pilhaInterpretadores = new Stack<>();
         List<String> elementos = Arrays.asList(contexto.split(" "));
         Iterator<String> iterator = elementos.iterator();
